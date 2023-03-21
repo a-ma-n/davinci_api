@@ -1,5 +1,5 @@
 # davinci_api
-flask api to get responses from the davinci model
+flask api to get responses from the davinci model, use a get request over here
 ### Url: 
 ```
 https://openai-davinci-app.azurewebsites.net/
