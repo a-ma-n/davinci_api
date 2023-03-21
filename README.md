@@ -1,6 +1,9 @@
 # davinci_api
 flask api to get responses from the davinci model
-
+### Url: 
+```
+https://openai-davinci-app.azurewebsites.net/
+```
 ### Json body should look like this
 ```
 {
