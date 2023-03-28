@@ -7,7 +7,7 @@ def get_result(key,input_prompt):
   return response['choices'][0]['text'] 
 
 app = Flask(__name__)
-@app.route('/',methods=['GET'])
+@app.route('/',methods=['GET','POST'])
 def Home():
   key=request.json["key"]
   prompt=request.json["prompt"]
