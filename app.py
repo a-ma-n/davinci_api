@@ -1,4 +1,4 @@
-from flask import Flask,request
+from flask import Flask,request,jsonify
 import openai
 
 def get_result(key,input_prompt):
@@ -11,7 +11,9 @@ app = Flask(__name__)
 def Home():
   key=request.json["key"]
   prompt=request.json["prompt"]
-  return get_result(key,prompt)
+  response=dict()
+  response["response"]=get_result(key,prompt)
+  return jsonify(response)
  
 if __name__=="__main__":
     app.run(debug=True,port="7910")
